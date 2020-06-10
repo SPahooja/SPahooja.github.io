@@ -232,7 +232,7 @@ li {
 .social-media i {
     margin-top: 2rem;
     font-size: 4rem;
-    transition: color 650ms;
+    /* transition: color 650ms; */
 }
 
 .social-media ul {
@@ -243,12 +243,37 @@ li {
 
 .icon-link {
     padding: 2rem;
+    transition: color 650ms;
 }
 
 .fa-linkedin:hover {
     color: #0e76a8;
 }
 
+
+/* *****************************FIX COLOR ON HOVER ***********************/
+
 .fa-github:hover {
-    color: #211F1F;
+    color: #09093a;
 }
+
+
+/* About End */
+
+
+/* Skills  */
+
+
+/* Skills End */
+
+
+/* Projects */
+
+
+/* Projects End */
+
+
+/* Experience */
+
+
+/* Experience End*/
