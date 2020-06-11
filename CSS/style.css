@@ -250,11 +250,8 @@ li {
     color: #0e76a8;
 }
 
-
-/* *****************************FIX COLOR ON HOVER ***********************/
-
 .fa-github:hover {
-    color: #09093a;
+    color: #211F1F;
 }
 
 
