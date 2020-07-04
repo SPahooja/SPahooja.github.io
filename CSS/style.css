@@ -13,6 +13,7 @@ html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
     color: #eeeeee;
+    overflow-x: hidden;
 }
 
 body {
@@ -51,7 +52,7 @@ img {
     width: 90%;
     max-width: 120rem;
     height: 100%;
-    margin: 0 auto;
+    margin: 10rem auto;
     position: relative;
 }
 
@@ -61,7 +62,7 @@ img {
 }
 
 .section-heading h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: rgba(255, 255, 255, .3);
     text-transform: uppercase;
     font-weight: 300;
@@ -73,7 +74,7 @@ img {
 .section-heading h1::after {
     content: '';
     position: absolute;
-    bottom: -.5rem;
+    bottom: -1.3rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.75)
@@ -89,13 +90,14 @@ img {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 100%;
-    bottom: -1rem;
+    bottom: -1.9rem;
 }
 
 .section-heading h6 {
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-size: 1.6rem;
     font-weight: 300;
+    opacity: 0.7;
 }
 
 .has-margin-right {
@@ -114,7 +116,7 @@ header {
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     top: 1rem;
     left: .8rem;
     width: 12rem;
@@ -148,7 +150,7 @@ li {
 
 .nav-link {
     font-family: 'Rock Salt', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 2rem;
 }
 
@@ -255,7 +257,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 15%; */
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .about-heading {
@@ -276,6 +279,7 @@ li {
 }
 
 .profile-img {
+    margin-right: 2rem;
     flex: 1;
 }
 
@@ -286,7 +290,12 @@ li {
 }
 
 .about-details {
+    margin-left: 2rem;
     flex: 1;
+}
+
+.about-details p {
+    text-align: center;
 }
 
 .socail-media {
@@ -323,6 +332,10 @@ li {
 
 
 /* Skills  */
+
+.services {
+    margin: 10% 10%;
+}
 
 .my-skills {
     margin-top: 10rem;
@@ -368,6 +381,10 @@ li {
 
 
 /* Projects */
+
+.portfolio {
+    margin: 10%;
+}
 
 .portfolio-item {
     display: flex;
@@ -551,6 +568,7 @@ input[type="submit"]:hover {
     border-radius: 100%;
     display: flex;
     animation: pulse 2s infinite;
+    cursor: pointer;
 }
 
 .up i {
@@ -583,3 +601,107 @@ input[type="submit"]:hover {
 
 
 /* Animation End*/
+
+
+/* Media Queries */
+
+@media screen and (max-width: 945px) {
+    body {
+        background: url("../images/sitebg2.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    .hero h1 {
+        font-size: 10rem;
+    }
+    .navlist {
+        flex-direction: column;
+    }
+    li {
+        margin: 2rem 0;
+    }
+    .nav-link {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero h6 {
+        font-size: 1.7rem;
+    }
+    .about-heading h1 {
+        font-size: 8rem;
+    }
+    .section-heading h1 {
+        font-size: 3rem;
+    }
+    .about-details .nav-list {
+        flex-direction: initial;
+    }
+    .about-details li {
+        margin: 0 2rem;
+    }
+    .icon-container {
+        width: 7rem;
+        height: 7rem;
+    }
+    .icon-container i {
+        font-size: 4rem;
+    }
+    .timeline ul {
+        margin: 0 0 0 auto;
+    }
+    .timeline .date::before {
+        left: -20rem;
+    }
+    .timeline .date::after {
+        left: -5.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggler {
+        top: 2rem;
+        right: 2rem;
+    }
+    .hero h1 {
+        font-size: 8rem;
+    }
+    .hero h6 {
+        font-size: 1.4rem;
+    }
+    .nav-link {
+        font-size: 2.5rem;
+    }
+    .about .container {
+        flex-direction: column;
+    }
+    .profile-img {
+        margin: 0 0 7rem 0;
+    }
+    .portfolio-item {
+        flex-direction: column;
+    }
+    .portfolio-img {
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+    .portfolio-description {
+        margin: 0;
+        order: 2;
+    }
+    .timeline p {
+        font-size: 1.6rem;
+    }
+    .timeline .date::before {
+        font-size: 1.4rem;
+    }
+    form {
+        width: 100%;
+    }
+    .up {
+        right: 2rem;
+    }
+}
+
+
+/* Media Queries End*/
