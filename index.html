@@ -14,51 +14,56 @@
 </head>
 
 <body>
-
-
-    <header>
-        <div class="container demo">
-            <div class="content">
-                <div id="large-header" class="large-header">
-                    <canvas id="demo-canvas"></canvas>
-                    <h1 class="main-title hero" id="hero"><span class="thin">Sahil</span> Pahooja</h1>
-                </div>
-
-            </div>
+    <div class="layout-foreground">
+        <div id="blurred-image-container">
+            <div class="img-src"></div>
+            <div class="img-src blurred-image"></div>
         </div>
-        <div id="nav-bar">
-            <!-- <div class="logo">
+
+
+        <header>
+            <div class="container demo">
+                <div class="content">
+                    <div id="large-header" class="large-header">
+                        <canvas id="demo-canvas"></canvas>
+                        <h1 class="main-title hero" id="hero"><span class="thin">Sahil</span> Pahooja</h1>
+                    </div>
+
+                </div>
+            </div>
+            <div id="nav-bar">
+                <!-- <div class="logo">
                 <a href="#">
                     <img src="images/logotemp.png" alt="Site-logo" class="logo">
                 </a>
             </div> -->
-            <div class="menu-toggler">
-                <div class="bar half start"></div>
-                <div class="bar "></div>
-                <div class="bar half end"></div>
+                <div class="menu-toggler">
+                    <div class="bar half start"></div>
+                    <div class="bar "></div>
+                    <div class="bar half end"></div>
+                </div>
+                <nav class="top-nav">
+                    <ul class="navlist">
+                        <li>
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="nav-link">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="top-nav">
-                <ul class="navlist">
-                    <li>
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="nav-link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#experience" class="nav-link">Experience</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- <div class="waveWrapper waveAnimation">
+        </header>
+        <!-- <div class="waveWrapper waveAnimation">
         <div class="waveWrapperInner bgTop">
             <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
         </div>
@@ -79,7 +84,7 @@
     </div> -->
 
 
-
+    </div>
     <section class="about" id="about">
         <div class="container">
             <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
@@ -264,9 +269,9 @@
             </div>
             <form action="" data-aos="fade-up" data-aos-delay="300">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                <!-- <input type="text" id="name" name="name" placeholder="Enter your name..." required> -->
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <!-- <input type="email" id="email" name="email" placeholder="Enter your email" required> -->
                 <label for="service">Services:</label>
                 <select name="services" id="service">
                     <option value="Option 1">Option1</option>
@@ -275,7 +280,7 @@
                 </select>
                 <label for="subject">Subject:</label>
                 <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-                <input type="submit" value="Submit">
+                <!-- <input type="submit" value="Submit"> -->
 
             </form>
         </div>

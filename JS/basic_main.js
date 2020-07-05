@@ -22,4 +22,10 @@ $(document).ready(function() {
         duration: 1800,
         once: true
     });
+    $(window).scroll(function(e) {
+        var s = $(window).scrollTop(),
+            opacityVal = (s / 400);
+
+        $('.blurred-image').css('opacity', opacityVal);
+    });
 });
