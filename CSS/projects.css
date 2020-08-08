@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+.portfolio img:not(.extrapic) {
+    width: 100%;
+}
+
+.portfolio-item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.portfolio-img {
+    /* width: 50rem; */
+    flex: 1;
+}
+
+.portfolio-description {
+    flex: 1;
+    margin: 1rem;
+}
+
+.portfolio-description h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-family: "Alata", sans-serif;
+    font-weight: bold;
+    color: #007CBE;
+}
+
+.portfolio-description p,
+.portfolio-long p {
+    text-align: left;
+}
+
+.portfolio-long {
+    display: none;
+    order: 3;
+    background-color: rgba(9, 4, 19, 0.918);
+    padding: 2rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.arrowDown {
+    display: block;
+}
+
+.arrowUp {
+    display: none;
+}
+
+.portfolio-description .cta {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #eee;
+    transition: all 150ms;
+}
+
+.portfolio-description .cta:hover {
+    transform: scale(1.1);
+    /* font-weight: 800; */
+}
+
+.portfolio-item:last-child {
+    margin-bottom: 4rem;
+}
+
+.extrapic {
+    margin: 1rem;
+    width: 40%;
+}
+
+.portfolio-long a,
+.bio a {
+    color: rgb(211, 171, 230);
+    font-weight: 600;
+}
+
+.portfolio-long .subheading {
+    margin-top: 1rem;
+    color: #70b1a1;
+    display: block;
+    text-align: left;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.portfolio-long ul,
+.bio ul {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.nested li {
+    padding: 0 !important;
+    margin-left: 10px;
+}
+
+.portfolio-long li {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    section p,
+    .portfolio-long ul,
+    .bio ul {
+        font-size: 1.5rem;
+    }
+    .portfolio-item {
+        flex-direction: column;
+    }
+    .portfolio-description {
+        order: 2;
+        margin: 0;
+    }
+    .portfolio-description h1 {
+        margin-top: -1rem;
+        font-size: 2.5rem;
+    }
+    .portfolio-img {
+        max-width: 100%;
+        margin-bottom: 2rem;
+        order: 1;
+    }
+}
