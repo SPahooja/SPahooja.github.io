@@ -78,7 +78,8 @@
 
 .extrapic {
     margin: 1rem;
-    width: 40%;
+    width: 10%;
+    float: right;
 }
 
 .portfolio-long a,
@@ -133,5 +134,8 @@
         max-width: 100%;
         margin-bottom: 2rem;
         order: 1;
+    }
+    .extrapic {
+        width: 20%;
     }
 }
