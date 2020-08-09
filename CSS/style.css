@@ -457,7 +457,12 @@
                     text-align: center;
                 }
                 
+                .my-skills>* {
+                    vertical-align: top;
+                }
+                
                 .skill {
+                    vertical-align: top;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -579,6 +584,10 @@
                     margin-top: 2rem;
                     display: inline-block;
                     max-width: 130px;
+                }
+                
+                .astudio_wrapper {
+                    max-width: 55px;
                 }
                 /* Skills End */
                 /* Projects */
@@ -937,6 +946,12 @@ input[type="submit"]:hover {
                     }
                     .about .container {
                         flex-direction: column;
+                    }
+                    .about-details p {
+                        font-size: 1.8rem;
+                    }
+                    .skill p {
+                        font-size: 1.6rem;
                     }
                     .profile-img {
                         margin: 0 0 7rem 0;
