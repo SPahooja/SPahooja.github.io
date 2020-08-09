@@ -40,7 +40,7 @@
 .portfolio-long {
     display: none;
     order: 3;
-    background-color: rgba(9, 4, 19, 0.918);
+    background-color: #1d1d1db2;
     padding: 2rem;
     margin: 1rem 0 2rem 0;
 }
