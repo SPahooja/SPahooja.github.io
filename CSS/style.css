@@ -54,6 +54,12 @@
                     -o-filter: blur(0.5px) brightness(0.8);
                     filter: blur(0.5px) brightness(0.8);
                 }
+                
+                @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+                    html {
+                        background: #404040!important;
+                    }
+                }
                 /* width */
                 
                  ::-webkit-scrollbar {
