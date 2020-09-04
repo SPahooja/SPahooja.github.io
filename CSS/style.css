@@ -38,15 +38,28 @@ body {
 }
 @media only screen and (max-width: 767px) {
   body {
-    z-index: -1;
-    /* position: fixed; */
+    /* z-index: -1;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background-size: 100%;
     background-image: url("../images/bg.jpg");
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background: none;
+  }
+  #bg-image {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
 }
 
